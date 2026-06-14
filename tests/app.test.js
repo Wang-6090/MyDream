@@ -70,7 +70,7 @@ function testFilter() {
   ];
   const filterGood = dreams.filter(d => d.tag === "good");
   assertEqual(filterGood.length, 2, "筛选美梦得到2条");
-  const filterAll = dreams.filter(d => true);
+  const filterAll = dreams.filter(() => true);
   assertEqual(filterAll.length, 4, "全部筛选得到4条");
 }
 
