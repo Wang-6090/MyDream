@@ -1,0 +1,17 @@
+{
+  "name": "my-dream-journal",
+  "version": "1.0.0",
+  "description": "我做了个梦 - 梦境记录工具",
+  "scripts": {
+    "start": "npx http-server . -p 8080",
+    "test": "node tests/app.test.js",
+    "lint": "npx eslint . --ext .js,.html",
+    "build": "mkdir -p dist && cp index.html dist/ && cp -r tests dist/ 2>/dev/null || xcopy tests dist/tests /E /I 2>NUL"
+  },
+  "keywords": ["dream", "journal", "diary"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
