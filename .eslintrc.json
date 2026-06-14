@@ -16,5 +16,5 @@
     "quotes": ["error", "double"],
     "semi": ["error", "always"]
   },
-  "ignorePatterns": ["node_modules/", "dist/", "*.min.js"]
+  "ignorePatterns": ["node_modules/", "dist/", "*.min.js", "*.html"]
 }
